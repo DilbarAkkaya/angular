@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-basics';
   number="42";
+  img='https://logowik.com/content/uploads/images/react.jpg';
+  constructor(){
+    setTimeout(() => {
+      this.img='https://logowik.com/content/uploads/images/179_angular.jpg';
+    }, 5000);
+  }
 }
