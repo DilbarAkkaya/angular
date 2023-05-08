@@ -1,6 +1,11 @@
 <h1>Hello Angular world</h1>
 <h2>{{title}}</h2>
 <h3>{{number}}</h3>
-<img [src]="img" alt="react">
+<button (click)="onClick($event)">Click me!</button>
+<input type="text"
+  (keyup.enter)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput>
+<p><strong>{{inputValue}}</strong></p>
 <app-post></app-post>
 <app-post></app-post>
