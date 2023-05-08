@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'angular-basics';
   number="42";
   inputValue = '';
+  backgroundToggle = false;
   //img='https://logowik.com/content/uploads/images/react.jpg';
   constructor(){
    /*  setTimeout(() => {
