@@ -2,10 +2,7 @@
 <h2>{{title}}</h2>
 <h3>{{number}}</h3>
 <button (click)="onClick($event)">Click me!</button>
-<input type="text"
-  (keyup.enter)="onInput($event)"
-  (blur)="onBlur(myInput.value)"
-  #myInput>
+<input type="text" [(ngModel)] = 'inputValue'>
 <p><strong>{{inputValue}}</strong></p>
 <app-post></app-post>
 <app-post></app-post>
